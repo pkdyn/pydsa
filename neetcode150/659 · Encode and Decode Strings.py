@@ -8,7 +8,8 @@ class Solution:
         # write your code here
         res = ""
         for s in strs:
-            res += str(len(s)) + "~" + s
+            #len + ~ + actual string
+            res += str(len(s)) + "~" + s #adding ~ as demiliter
         return res
 
     """
@@ -23,7 +24,7 @@ class Solution:
             j = i
             while str[j] != "~":
                 j += 1
-            res.append(str[j + 1: j + 1 + int(str[i:j])])
+            res.append(str[j + 1: j + 1 + int(str[i:j])]) #int(str[i:J]) converts the length int -> str
             i= j + 1 + int(str[i:j])
 
         return res

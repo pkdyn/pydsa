@@ -11,7 +11,7 @@ class Solution:
             tdct[t[i]] = 1 + tdct.get(t[i], 0)
         
         for ch in sdct:
-            if sdct[ch] != tdct.get(ch, 0): #ensure ch as key in other dict too
+            if sdct[ch] != tdct.get(ch, 0): #ensure ch is a key in other dict too
                 return False
         
         return True

@@ -1,7 +1,7 @@
 class Solution:
     #n**2, n**2
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        rSet = defaultdict(set) #default dict of sets for invalid keys
+        rSet = defaultdict(set) #default dict of sets (for invalid keys)
         cSet = defaultdict(set)
         boxSet = defaultdict(set)
         
@@ -9,7 +9,6 @@ class Solution:
             for c in range(9):
                 if board[r][c] == ".":
                     continue
-                    
                 if (board[r][c] in rSet[r] 
                 or board[r][c] in cSet[c] 
                 #truncate division for creating key via box no.

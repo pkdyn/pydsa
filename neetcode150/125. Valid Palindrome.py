@@ -8,7 +8,7 @@ class Solution:
             if ch.isalnum(): #not isalnum(ch)
                 newStr += ch.lower()
         
-        return newStr == newStr[::-1] #reverse a string
+        return newStr == newStr[::-1] #compare string with its reverse
         '''
         
         l, r = 0, len(s) - 1
