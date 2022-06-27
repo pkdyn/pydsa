@@ -1,7 +1,0 @@
-inp = input('input: ')
-inpart = inp.split()
-print(inpart[0], inpart[1], sep=':' )
-"""
-input: 96 69
-96:69
-"""
